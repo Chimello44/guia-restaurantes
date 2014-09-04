@@ -1,23 +1,59 @@
-<?php 
- 
-function soma($x,$y) { 
+<!DOCTYPE html>
 
-$resultado = $x+$y; 
 
-echo $resultado; 
-} 
-?> 
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <?php
 
-<?php
-
-function subtracao($x-$y){
-    $resultado= $x-$y;
+            
+            function soma($x, $y){
+                $z = $x + $y;
+                return $z;
+            }
+            function subtracao($x, $y){
+                $z = $x - $y;
+                return $z;
+            }
+            function multiplicacao($x, $y){
+                $z = $x * $y;
+                return $z;
+            }
+            function divisao ($x, $y){
+                $z = $x / $y;
+                return $z;
+            }
+            
+            $n1 = 5;
+            $n2 = 10;
     
-    echo $resultado;
-}
+            $resultado = soma($n1, $n2);
 
-?>
+            echo "Resultado da soma: ".$resultado;
+            
+            echo "<br><br>";
+            
+            $resultado = subtracao($n1, $n2);
 
-<?php
+            echo "Resultado da subtração: ".$resultado;
+            
+            echo "<br><br>";
+            
+            $resultado = multiplicacao($n1, $n2);
 
-?>
+            echo "Resultado da multiplicação: ".$resultado;
+            
+            echo "<br><br>";
+            
+            $resultado = divisao($n1, $n2);
+
+            echo "Resultado da divisão: ".$resultado;
+            
+            
+            echo "<br><br>";
+
+               ?>
+    </body>
+</html>
