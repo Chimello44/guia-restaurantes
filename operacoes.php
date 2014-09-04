@@ -8,7 +8,7 @@
     <body>
         <?php
 
-            
+            //funcoes
             function soma($x, $y){
                 $z = $x + $y;
                 return $z;
@@ -25,34 +25,30 @@
                 $z = $x / $y;
                 return $z;
             }
-            
-            $n1 = 5;
-            $n2 = 10;
+            //teste
+            $v1 = 30;
+            $v2 = 40;
     
-            $resultado = soma($n1, $n2);
+            $resultado = soma($v1, $v2);
 
-            echo "Resultado da soma: ".$resultado;
+            echo "Resultado soma: ".$resultado;
             
-            echo "<br><br>";
             
-            $resultado = subtracao($n1, $n2);
+            $resultado = subtracao($v1, $v2);
 
-            echo "Resultado da subtração: ".$resultado;
+            echo "Resultado sub: ".$resultado;
             
-            echo "<br><br>";
             
-            $resultado = multiplicacao($n1, $n2);
+            $resultado = multiplicacao($v1, $v2);
 
-            echo "Resultado da multiplicação: ".$resultado;
+            echo "Resultado mult: ".$resultado;
             
-            echo "<br><br>";
             
-            $resultado = divisao($n1, $n2);
+            $resultado = divisao($v1, $v2);
 
-            echo "Resultado da divisão: ".$resultado;
+            echo "Resultado div: ".$resultado;
             
             
-            echo "<br><br>";
 
                ?>
     </body>
